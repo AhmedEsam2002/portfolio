@@ -1,11 +1,12 @@
 "use client";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
+import { Item } from "@radix-ui/react-select";
 const days = Math.floor(
   (new Date() -
     new Date(
       new Date("2002-12-03").setFullYear(
-        new Date("2002-12-03").getFullYear() + 10
+        new Date("2002-12-03").getFullYear() + 15
       )
     )) /
     (1000 * 60 * 60 * 24)
@@ -44,7 +45,13 @@ export default function Stats() {
               delay={2}
               className="text-4xl xl:text-6xl font-extrabold"
             />
-            <p>{title}</p>
+            <p
+              className={`${
+                title.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
+              } `}
+            >
+              {title}
+            </p>
           </div>
         ))}
       </div>
