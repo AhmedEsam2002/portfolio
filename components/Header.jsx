@@ -2,13 +2,14 @@ import Link from "next/link";
 import Button from "./Button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+
 export default function Header() {
   return (
-    <header className="py-8 xl:py-12 text-white bg-pink-50/20">
+    <header className="py-8 xl:py-8 text-white">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"}>
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-2xl font-semibold">
             AhmedEsam
             <span className="text-accent">.</span>
           </h1>

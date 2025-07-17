@@ -1,11 +1,12 @@
 import Button from "@/components/Button";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
+import Stats from "@/components/Stats";
 import { FiDownload } from "react-icons/fi";
 export default function Home() {
   return (
     <>
-      <section className="h-full">
+      <section className="h-full ">
         <div className="container mx-auto ">
           <div className="flex flex-col xl:flex-row items-center justify-between pt-4 xl:pt-8  xl:pb-2">
             <div className="text-center xl:text-left">
@@ -39,11 +40,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="-order-1 xl:order-none mb-8 xl:mb-0">
+            <div className="-order-1 xl:order-none  mb-8 xl:mb-0">
               <Photo />
             </div>
           </div>
         </div>
+        <Stats />
       </section>
     </>
   );
