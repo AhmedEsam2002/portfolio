@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import Button from "./Button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 export default function Header() {
@@ -17,9 +17,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-8">
           <Nav />
           <Link href={"/contact"}>
-            <Button className={" cursor-pointer hover:bg-gray-800"}>
-              Hire Me
-            </Button>
+            <Button>Hire Me</Button>
           </Link>
         </div>
         {/* Mobile Navigation */}
