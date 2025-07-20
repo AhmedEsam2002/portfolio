@@ -11,6 +11,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import ExperienceTap from "./ExperienceTap";
 // Data of Tabs
 const about = {
   title: "About Me",
@@ -48,7 +49,7 @@ const about = {
 };
 const experience = {
   icon: "../assets/resume/badge.svg",
-  title: "Experience",
+  title: "My Experience",
   description:
     "I am a passionate web developer with a focus on creating dynamic and responsive web applications. My expertise lies in modern web technologies, and I am always eager to learn and adapt to new challenges.",
 
@@ -215,7 +216,7 @@ export default function page() {
                 about
               </TabsContent>
               <TabsContent value="experience" className={"w-full"}>
-                experience
+                <ExperienceTap experience={experience} />
               </TabsContent>
               <TabsContent value="education" className={"w-full"}>
                 education
