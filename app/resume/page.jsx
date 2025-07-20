@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ExperienceTap from "./ExperienceTap";
+import EducationTap from "./EducationTap";
 // Data of Tabs
 const about = {
   title: "About Me",
@@ -173,6 +174,7 @@ const skills = {
 };
 
 const triggerStyle =
+  "text-3xl" +
   "inline-flex items-center w-full justify-center " +
   "bg-[#27272c] text-white rounded-lg p-3 " +
   "whitespace-nowrap font-medium text-balance " +
@@ -195,9 +197,9 @@ export default function page() {
           {/* Tabs */}
           <Tabs
             defaultValue="about"
-            className="flex flex-col justify-center items-center xl:flex-row gap-[60px] "
+            className="flex flex-col justify-center items-center xl:flex-row gap-[60px]  "
           >
-            <TabsList className="flex flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6  h-fit">
+            <TabsList className="flex flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6  h-fit ">
               <TabsTrigger value="about" className={triggerStyle}>
                 About Me
               </TabsTrigger>
@@ -211,7 +213,7 @@ export default function page() {
                 Skills
               </TabsTrigger>
             </TabsList>
-            <div className="min-h-[70vh] w-full">
+            <div className="max-h-[70vh] w-full">
               <TabsContent value="about" className={"w-full"}>
                 about
               </TabsContent>
@@ -219,7 +221,7 @@ export default function page() {
                 <ExperienceTap experience={experience} />
               </TabsContent>
               <TabsContent value="education" className={"w-full"}>
-                education
+                <EducationTap education={education} />
               </TabsContent>
               <TabsContent value="skills" className={"w-full"}>
                 skills
