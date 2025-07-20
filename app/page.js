@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <section className="h-full ">
-        <div className="container mx-auto ">
+        <div className="container px-10 md:px-0 mx-auto ">
           <div className="flex flex-col xl:flex-row items-center justify-between pt-4 xl:pt-8  xl:pb-2">
             <div className="text-center xl:text-left">
               <span className="text-xl">Software Engineer</span>
