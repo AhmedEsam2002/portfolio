@@ -27,18 +27,18 @@ const stats = [
   },
   {
     title: "Cups of Coffee",
-    value: days,
+    value: 10,
   },
 ];
 
 export default function Stats() {
   return (
     <section className="">
-      <div className="container mx-auto flex flex-wrap max-w-[80vw] items-center justify-between gap-8  pt-9">
+      <div className="container px-10 md:px-0   mx-auto grid grid-cols-2 sm:grid-cols-2  lg:grid-cols-4 max-w-[80vw] gap-8 pt-9">
         {stats.map(({ title, value }, idx) => (
           <div
             key={idx}
-            className="flex-1 flex gap-4 items-center justify-center xl:justify-start "
+            className="flex gap-4 items-center justify-center xl:justify-start"
           >
             <CountUp
               end={value}
