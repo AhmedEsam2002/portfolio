@@ -196,7 +196,7 @@ export default function page() {
         >
           {/* Tabs */}
           <Tabs
-            defaultValue="about"
+            defaultValue="experience"
             className="flex flex-col justify-center items-center xl:flex-row gap-[60px]  "
           >
             <TabsList className="flex flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6  h-fit ">
