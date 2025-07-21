@@ -13,6 +13,8 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ExperienceTap from "./ExperienceTap";
 import EducationTap from "./EducationTap";
+import SkillsTap from "./SkillsTap";
+import AboutTap from "./AboutTap";
 // Data of Tabs
 const about = {
   title: "About Me",
@@ -214,17 +216,17 @@ export default function page() {
               </TabsTrigger>
             </TabsList>
             <div className="max-h-[70vh] w-full">
-              <TabsContent value="about" className={"w-full"}>
-                about
+              <TabsContent value="about" className={"w-full h-full"}>
+                <AboutTap about={about} />
               </TabsContent>
-              <TabsContent value="experience" className={"w-full"}>
+              <TabsContent value="experience" className={"w-full h-full"}>
                 <ExperienceTap experience={experience} />
               </TabsContent>
-              <TabsContent value="education" className={"w-full"}>
+              <TabsContent value="education" className={"w-full h-full"}>
                 <EducationTap education={education} />
               </TabsContent>
-              <TabsContent value="skills" className={"w-full"}>
-                skills
+              <TabsContent value="skills" className={"w-full h-full"}>
+                <SkillsTap skill={skills} />
               </TabsContent>
             </div>
           </Tabs>
